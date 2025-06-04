@@ -16,7 +16,7 @@ namespace QuizApp.Controllers
             _questionService = questionService;
         }
 
-        // Lấy tất cả câu hỏi
+        
         [HttpGet("questions")]
         public async Task<IActionResult> GetQuestions()
         {
@@ -24,7 +24,7 @@ namespace QuizApp.Controllers
             return Ok(ConvertToDto.ToQuestionDto(questions));
         }
 
-        // Kiểm tra đáp án của 1 câu hỏi
+        
         [HttpPost("check-answer")]
         public async Task<IActionResult> CheckAnswer([FromBody] UserAnswer request)
         {
