@@ -1,8 +1,8 @@
 ﻿using System;
 namespace QuizzApp.Models
 {
-	 public class QuizResult
-	 {
+    public class QuizResult
+    {
         public int QuizResultid { get; set; }
         public int UserId { set; get; }
         public int TotalQuestions { get; set; }
