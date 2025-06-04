@@ -12,7 +12,7 @@ namespace QuizzApp.Services
                 Id = question.Id,
                 Content = question.Content,
                 QuizId = question.QuizId,
-                // Không map Quiz để tránh vòng tham chiếu JSON
+              
                 Options = question.Options.Select(o => new AnswerOptionDto
                 {
                     Id = o.Id,
